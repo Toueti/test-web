@@ -1,0 +1,121 @@
+/* Container for the product */
+.product {
+  border: 1px solid #ddd; /* Light border around the product */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensures children stay within rounded corners */
+  transition: transform 0.2s; /* Smooth transition for hover effects */
+  background-color: #ffffff; /* White background for contrast */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Hover effect on product card */
+.product:hover {
+  transform: scale(1.02); /* Slightly scale up on hover */
+}
+
+/* Product details section */
+.product-details {
+  padding: 15px; /* Padding for the details section */
+  text-align: center; /* Center align the text */
+}
+
+/* Product image styles */
+.product-details img {
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px; /* Slight rounding on the image */
+}
+
+/* Product info text styles */
+.product-info {
+  margin-top: 10px; /* Space between image and text */
+}
+
+/* Styles for product name */
+.name {
+  font-size: 1.5rem; /* Larger font size for name */
+  font-weight: bold; /* Bold text */
+  color: #333; /* Dark text color */
+}
+
+/* Styles for product description */
+.description {
+  font-size: 1rem; /* Standard font size */
+  color: #666; /* Gray color for description */
+  margin: 5px 0; /* Spacing around the description */
+}
+
+/* Styles for product category */
+.category {
+  font-size: 0.9rem; /* Smaller font size for category */
+  color: #999; /* Light gray color */
+}
+
+/* Price section styles */
+.price {
+  padding: 15px; /* Padding for price section */
+  background-color: #f9f9f9; /* Light gray background */
+  text-align: center; /* Center align the price */
+  border-top: 1px solid #ddd; /* Top border to separate from details */
+}
+
+/* Strikethrough for original price */
+.strikethrough {
+  text-decoration: line-through; /* Line through text */
+  color: #999; /* Gray color for strikethrough */
+}
+
+/* Discount price styles */
+.discount {
+  font-size: 1.2rem; /* Larger font size for discount */
+  color: #e74c3c; /* Red color for discount */
+}
+
+/* Call to action button styles */
+.cta {
+  background-color: #28a745; /* Green background */
+  color: #ffffff; /* White text */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px 15px; /* Padding for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Standard font size */
+  margin-top: 10px; /* Space above the button */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Button hover effect */
+.cta:hover {
+  background-color: #007bff; /* Blue background on hover */
+  border-color: #0056b3; /* Darker green on hover */
+}
+
+/* Link styles */
+a {
+  margin-left: 10px;
+  background-color: #237d44;
+  text-decoration: none; /* Remove underline from links */
+  color: #f7f7f7; /* Bootstrap blue */
+  font-size: 0.9rem; /* Slightly smaller font for link */
+  margin-top: 10px; /* Space above the link */
+  display: inline-block; /* Ensure margin works correctly */
+  padding: 8px 12px; /* Padding for the link */
+  border: 1px solid transparent; /* Border for hover effect */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+/* Link hover effect */
+a:hover {
+  text-decoration: none; /* Remove underline on hover */
+  color: #ffffff; /* Change text color to white on hover */
+  background-color: #007bff; /* Blue background on hover */
+  border-color: #0056b3; /* Darker blue border on hover */
+}
+
+/* Active link styles */
+a.active {
+  color: #ffffff; /* White text for active links */
+  background-color: #0056b3; /* Darker blue background for active links */
+  border-color: #003d7a; /* Even darker border for active links */
+}

@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="test">
+    <div class="filters">
+      <p>Filter :</p>
+      <ul>
+        <li><a class="button" (click)="filter='Pies'">Pies</a></li>
+        <li><a class="button" (click)="filter='Cakes'">Cakes</a></li>
+        <li><a class="button" (click)="filter=''">All</a></li>
+      </ul>
+    </div>
+    <table border="1">
+      <caption>
+        Our delicious selection of pies for you to enjoy!
+      </caption>
+      <thead>
+        <tr>
+          <th>Picture</th>
+          <th>Name Of The Pie/Cake</th>
+          <th>Price</th>
+          <th>For More Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Loop through each product -->
+        <tr *ngFor="let product of getFilteredProducts()" class="product-item">
+          <!-- Send the product to child component for displaying details -->
+          <td><img [src]="getImageUrl(product)" [alt]="product.name" /></td>
+          <td>{{ product.name }}</td>
+          <td>
+            <div class="price">
+              <div [ngClass]="{ strikethrough: product.discount > 0 }">
+                {{ product.price | currency : "USD" }}
+              </div>
+              <div *ngIf="product.discount > 0" class="discount">
+                {{ product.price * (1 - product.discount) | currency : "USD" }}
+              </div>
+            </div>
+          </td>
+          <td><a [routerLink]="['/details', product.id]" routerLinkActive="active">details</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>

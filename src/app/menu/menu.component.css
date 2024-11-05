@@ -1,0 +1,81 @@
+#leftmenu {
+    background-color: #f7f7f7;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    min-width: 250px;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+}
+
+#leftmenu img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+#leftmenu header h4 {
+    font-family: 'Arial', sans-serif; 
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.searchbox {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s; 
+}
+
+.searchbox:focus {
+    border-color: brown; 
+    outline: none;
+}
+
+a {
+    display: block; 
+    background-color: brown;
+    color: #fff; 
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #a0522d;
+}
+
+a.router-link-active {
+    background-color: #8b4513;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    #leftmenu {
+        padding: 10px; 
+        display: flex; /* Use flexbox in mobile view */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    #leftmenu img {
+        margin-bottom: 10px; /* Less margin for images on small screens */
+        max-width: 100px;
+    }
+
+    .searchbox {
+        width: 90%; /* Slightly smaller width for mobile */
+    }
+    
+    a {
+        width: 90%; /* Button width for better alignment */
+    }
+    img{
+        max-width: 100px;
+    }
+}

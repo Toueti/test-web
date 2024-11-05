@@ -1,0 +1,24 @@
+#mainheader {
+    width: 100%;
+
+}
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-left:20px ;
+}
+li{
+    margin-right: 20px;
+}
+a{
+    background-color: rgb(13, 175, 59);
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: blanchedalmond;
+}
+a:active{
+    color: black;
+    background-color: beige;
+}

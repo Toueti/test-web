@@ -1,0 +1,75 @@
+/* Bold text class */
+.bold {
+  font-weight: bold;
+}
+
+/* Main container styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px; /* Limit the maximum width of the container */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add padding for better spacing */
+}
+
+/* Filters section styling */
+.filters {
+  display: flex;
+  justify-content:space-around;
+  padding: 25px; /* Adjusted padding for consistency */
+  border-bottom: 2px solid #999; /* Added bottom border for separation */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Button styling in filters */
+/* Button styling in filters */
+.filters .button {
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  width: 100px; /* Fixed width */
+  height: 50px; /* Fixed height */
+  background: #2a7a2a; /* Button background color */
+  color: #fff; /* Text color */
+  text-align: center; /* Center text (not needed with flex but good for consistency) */
+  border-radius: 10px; /* Rounded corners */
+  border: none; /* Remove default border */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background 0.3s, transform 0.2s; /* Smooth transition effects */
+}
+
+/* Button hover effect */
+.filters .button:hover {
+  background: #4caf50; /* Change to a lighter green on hover */
+  transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+
+/* Products section styling */
+.products {
+  margin: 20px 100px; /* Adjusted margin for consistency */
+  border-top: 2px solid #999; /* Top border for separation */
+}
+
+/* Individual product item styling */
+.product-item {
+  border-bottom: 2px solid #999; /* Bottom border for separation */
+  padding: 15px 0; /* Padding for spacing within product items */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .filters {
+      flex-direction: column; /* Stack filters vertically on smaller screens */
+      padding: 15px; /* Adjust padding */
+  }
+
+  .filters .button {
+      width: 100%; /* Full width for buttons */
+      margin-bottom: 10px; /* Space between buttons */
+  }
+
+  .products {
+      margin: 20px; /* Reduce margin on smaller screens */
+  }
+}

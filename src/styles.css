@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('assets/pattern.jpg');
+}
+app-root {
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+    grid-template-rows: auto 1fr auto;
+    margin: 0 auto; 
+    padding: 20px;
+    height: 100vh; 
+}
+app-header {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: #89dc6d;
+    height: 80px;
+    grid-column: 1 / -1; 
+    border-radius: 10px;
+}
+
+app-menu {
+    grid-column: 1 / 2;
+}
+
+.main-content {
+    grid-column: 2 / 3;
+}
+
+app-footer {
+    grid-column: 1 / -1; 
+}
+#leftmenu {
+    background-color: #f7f7f7;
+    padding: 20px;
+    height: 100%;
+}
+
+.searchbox {
+    width: 100%;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 10px 0;
+}

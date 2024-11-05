@@ -1,0 +1,13 @@
+<aside id="leftmenu">
+    <img src="../../assets/logo.jpg" alt="logo"/>
+    <header>
+        <h4>Explorez nos cakes</h4>
+    </header>
+    <input 
+        type="search" 
+        class="searchbox" 
+        placeholder="Chercher dans notre boutique" 
+        [(ngModel)]="searchQuery" 
+        (keyup.enter)="onSearch()" />
+    <a routerLink="/cart" routerLinkActive="active">Your Cart</a>
+</aside>

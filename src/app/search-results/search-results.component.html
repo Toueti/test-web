@@ -1,0 +1,17 @@
+<h2>Search Results for "{{ searchQuery }}"</h2>
+<div class="search-results">
+    
+
+    <div *ngIf="products.length === 0">No results found.</div>
+
+    <ul *ngIf="products.length > 0">
+        <li *ngFor="let product of products">
+            <img [src]="getImageUrl(product)" [alt]="product.name" />
+            <div>
+                <h3>{{ product.name }}</h3>
+                <p>{{ product.price | currency:'USD' }}</p>
+                <a [routerLink]="['/details', product.id]">View Details</a>
+            </div>
+        </li>
+    </ul>
+</div>

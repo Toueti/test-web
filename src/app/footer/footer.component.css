@@ -1,0 +1,7 @@
+/* footer.component.css */
+
+footer {
+    text-align: center; /* Center footer text */
+    padding: 10px 0; /* Padding for the footer */
+    background-color: #7bf275; /* Background color */
+}
